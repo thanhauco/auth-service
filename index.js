@@ -8,4 +8,10 @@ app.post('/register', async (req, res) => {
     res.status(201).send('Created');
   } catch (e) { res.status(400).send(e.message); }
 });
+app.post('/login', async (req, res) => {
+  try {
+    const token = await auth.login(req.body.email, req.body.password);
+    res.json({ token });
+  } catch (e) { res.status(401).send(e.message); }
+});
 app.listen(3000, () => console.log('Listening on 3000'));
