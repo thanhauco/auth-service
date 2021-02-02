@@ -1,5 +1,6 @@
 const express = require('express');
 const auth = require('./src/services/auth');
+const authMiddleware = require('./src/middleware/auth');
 const app = express();
 app.use(express.json());
 app.post('/register', async (req, res) => {
@@ -14,4 +15,5 @@ app.post('/login', async (req, res) => {
     res.json({ token });
   } catch (e) { res.status(401).send(e.message); }
 });
+app.get('/profile', authMiddleware, (req, res) => res.json(req.user));
 app.listen(3000, () => console.log('Listening on 3000'));
