@@ -1,13 +1,13 @@
 const express = require('express');
 const auth = require('./src/services/auth');
 const authMiddleware = require('./src/middleware/auth');
+const validate = require('./src/middleware/validate');
 const app = express();
 app.use(express.json());
-// ... existing routes
-app.post('/token', (req, res) => {
+app.post('/register', validate, async (req, res) => {
   try {
-    const token = auth.refresh(req.body.token);
-    res.json({ token });
-  } catch (e) { res.sendStatus(403); }
+    await auth.register(req.body.email, req.body.password);
+    res.status(201).send('Created');
+  } catch (e) { res.status(400).send(e.message); }
 });
-app.listen(3000, () => console.log('Listening on 3000'));
+// ... rest
