@@ -1,2 +1,8 @@
 # Auth Service
-JWT based authentication service.
+
+## Features
+- JWT Authentication
+- Refresh Tokens
+- Input Validation
+- Rate Limiting
+- Unit Tests
