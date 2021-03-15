@@ -1,3 +1,2 @@
-const session = require('express-session');
-const RedisStore = require('connect-redis')(session);
-// ... setup session middleware
+const oidc = require('./src/services/oidc');
+app.use('/oidc', oidc.callback());
