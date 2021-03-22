@@ -1,8 +1,14 @@
 # Auth Service
 
 ## Features
-- JWT Authentication
-- Refresh Tokens
-- Input Validation
-- Rate Limiting
-- Unit Tests
+- JWT & Refresh Tokens
+- 2FA (TOTP)
+- RBAC
+- Password Reset
+- Redis Sessions
+- OIDC Provider
+- Audit Logging
+- GeoIP
+
+## Status
+Enterprise Ready V3.
