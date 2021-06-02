@@ -1,2 +1,2 @@
-const oidc = require('./src/services/oidc');
-app.use('/oidc', oidc.callback());
+const helmet = require('helmet');
+app.use(helmet());
