@@ -1,2 +1,2 @@
-const helmet = require('helmet');
-app.use(helmet());
+const compression = require('compression');
+app.use(compression());
