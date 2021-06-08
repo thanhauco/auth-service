@@ -1,2 +1,2 @@
-const compression = require('compression');
-app.use(compression());
+const logger = require('./src/logger');
+logger.info('Starting service');
