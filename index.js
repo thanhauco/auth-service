@@ -1,2 +1,2 @@
-const morgan = require('morgan');
-app.use(morgan('combined'));
+const cors = require('cors');
+app.use(cors());
