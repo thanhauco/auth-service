@@ -1,2 +1,1 @@
-const cors = require('cors');
-app.use(cors());
+app.get('/health', (req, res) => res.send('OK'));
