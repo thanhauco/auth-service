@@ -1,1 +1,5 @@
-app.get('/health', (req, res) => res.send('OK'));
+const client = require('prom-client');
+app.get('/metrics', async (req, res) => {
+  res.set('Content-Type', client.register.contentType);
+  res.end(await client.register.metrics());
+});
