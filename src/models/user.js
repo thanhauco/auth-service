@@ -1,5 +1,2 @@
-const users = [];
-module.exports = {
-  find: (email) => users.find(u => u.email === email),
-  create: (user) => users.push(user)
-};
+const Joi = require('joi');
+// Add schema validation
