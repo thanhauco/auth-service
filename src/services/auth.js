@@ -1,1 +1,1 @@
-// Check password complexity
+// Lock account after 5 failed attempts
