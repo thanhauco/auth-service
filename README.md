@@ -1,14 +1,13 @@
 # Auth Service
 
 ## Features
-- JWT & Refresh Tokens
-- 2FA (TOTP)
-- RBAC
-- Password Reset
-- Redis Sessions
-- OIDC Provider
-- Audit Logging
-- GeoIP
+- Enterprise V3 Features
+- Helmet Security
+- Winston Logging
+- Swagger UI
+- PM2 Config
+- Prometheus Metrics
+- Account Lockout
 
 ## Status
-Enterprise Ready V3.
+Enterprise Scale V4.
