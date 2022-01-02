@@ -1,8 +1,6 @@
 {
-  "name": "auth-service",
-  "dependencies": {
-    "express": "^4.17.1",
-    "speakeasy": "^2.0.0",
-    "qrcode": "^1.4.4"
-  }
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module"
 }
