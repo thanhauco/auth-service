@@ -1,4 +1,3 @@
-import compression from 'compression';
-import express from 'express';
-const app = express();
-app.use(compression());
+import morgan from 'morgan';
+// ... existing
+app.use(morgan('combined'));
