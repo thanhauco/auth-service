@@ -1,13 +1,12 @@
 # Auth Service
 
 ## Features
-- Enterprise V3 Features
-- Helmet Security
-- Winston Logging
-- Swagger UI
-- PM2 Config
-- Prometheus Metrics
-- Account Lockout
+- Enterprise V4 Features
+- Node 16 Upgrade
+- ES Modules
+- GitHub Actions
+- Jest & Supertest
+- Security Middleware
 
 ## Status
-Enterprise Scale V4.
+Modernized V5 (2022).
